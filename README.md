@@ -1,16 +1,140 @@
-# React + Vite
+📅 GhanuRoutine - 30-Day Mastery Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+GhanuRoutine is a modern, responsive web application designed to help users master their daily habits over a 30-day period. It features personalized tracking, cloud synchronization, and smart calendar management.
 
-Currently, two official plugins are available:
+🚀 Live Demo: https://ghanuroutine.web.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✨ Key Features
 
-## React Compiler
+🔐 Multi-Method Authentication: Secure login via Google, Email/Password, and Phone Number (OTP).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+☁️ Cloud Sync: All data is stored securely in Firebase Firestore, ensuring your progress is saved across devices.
 
-## Expanding the ESLint configuration
+🌓 Dark Mode: Fully adaptive UI with a built-in dark mode toggle for late-night planning.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📅 Smart Calendar: Automatically calculates "Day 1" based on your personalized start date. If you miss a day, the calendar keeps moving, motivating you to stay on track.
+
+📊 Progress Dashboard: Visual progress bars and statistics (Daily completion %, Total completion, Phase tracking).
+
+📂 Data Export: Download your entire 30-day report as a CSV file for backup or analysis.
+
+📱 Fully Responsive: Works perfectly on Desktops, Tablets, and Mobile devices.
+
+🛠️ Tech Stack
+
+Frontend Framework: React (via Vite)
+
+Styling: Tailwind CSS
+
+Icons: Lucide React
+
+Backend/Database: Firebase Firestore
+
+Authentication: Firebase Auth
+
+Hosting: Firebase Hosting
+
+🚀 Getting Started (Local Development)
+
+Follow these steps to run the project on your local machine.
+
+Prerequisites
+
+Node.js (v16 or higher) installed.
+
+A Google/Firebase account.
+
+1. Clone the Repository
+
+git clone [https://github.com/yourusername/ghanu-routine.git](https://github.com/yourusername/ghanu-routine.git)
+cd ghanu-routine
+
+
+2. Install Dependencies
+
+npm install
+
+
+3. Configure Firebase
+
+Go to the Firebase Console.
+
+Create a new project.
+
+Enable Authentication:
+
+Go to Build > Authentication > Sign-in method.
+
+Enable Google, Email/Password, and Phone.
+
+Enable Firestore:
+
+Go to Build > Firestore Database.
+
+Create database (Start in Test Mode for development).
+
+Get Config:
+
+Go to Project Settings > General.
+
+Register a web app (</>) and copy the firebaseConfig object.
+
+Update Code:
+
+Open src/App.jsx.
+
+Replace the const firebaseConfig = { ... } object with your own keys.
+
+4. Run the App
+
+npm run dev
+
+
+The app will start at http://localhost:5173.
+
+📦 Deployment
+
+This project is optimized for Firebase Hosting.
+
+Install Firebase CLI:
+
+npm install -g firebase-tools
+
+
+Login to Firebase:
+
+firebase login
+
+
+Initialize Hosting:
+
+firebase init hosting
+
+
+Public directory: dist
+
+Configure as single-page app: Yes
+
+Github Actions: No
+
+Build and Deploy:
+
+npm run build
+firebase deploy
+
+
+📸 Screenshots
+
+Light Mode
+
+Dark Mode
+
+![light](image.png)
+
+![Darkmod](image-1.png)
+
+📄 License
+
+This project is open-source and available under the MIT License.
+
+Made with ❤️ for self-improvement.
