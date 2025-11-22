@@ -1,0 +1,14 @@
+{
+  "hosting": {
+    "site": "ghanuroutine-bd45c",
+
+    "public": "dist",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
